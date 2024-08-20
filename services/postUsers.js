@@ -1,6 +1,5 @@
 async function postUsers(nombre,apellido) {
     try {
-     
         const userData = { 
             nombre,
             apellido 
@@ -14,8 +13,6 @@ async function postUsers(nombre,apellido) {
             },
             body: JSON.stringify(userData)
         });
-
-     
         return await response.json();
 
         
