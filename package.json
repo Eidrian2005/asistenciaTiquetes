@@ -1,0 +1,19 @@
+{
+  "name": "tiquetesasistencia_proyecto",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "json-server": "^1.0.0-beta.2",
+    "parcel": "^2.12.0"
+  }
+}
