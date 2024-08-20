@@ -4,8 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel src/index.html --open",
-    "init": "json-server --watch server/db.json --port 3001"
+    "init": "json-server --watch server/db.json --port 3001",
     "start": "parcel src/index.html --open"
   },
   "keywords": [],
