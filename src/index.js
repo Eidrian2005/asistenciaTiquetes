@@ -1,5 +1,2 @@
-import { getUsers } from "../services/getUsers.js";
-
-
-
+import { pepito } from "./js/resgistro";
 
