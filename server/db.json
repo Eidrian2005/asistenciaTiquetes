@@ -1,5 +1,10 @@
 {
-    "users": [{"nombre": "Eidrian", "apellido": "Si"}],
-
-    "productos": [{"nombre": 392, "cantidad": "atun"}]
+"users": [
+    {
+    "id": "c454",
+    "usuario": "Eidrian",
+    "email": "eidrian@gmail.com",
+    "contrasenia": "12345"
+    }
+]
 }

@@ -1,9 +1,9 @@
-async function postUsers(nombre,apellido) {
+async function postUsers(usuario,email,contrasenia) {
     try {
         const userData = { 
-            nombre,
-            apellido 
-        
+            usuario,
+            email,
+            contrasenia 
         };
 
         const response = await fetch("http://localhost:3001/users", {
@@ -14,7 +14,8 @@ async function postUsers(nombre,apellido) {
             body: JSON.stringify(userData)
         });
         return await response.json();
-
+        console.log('datos almacenados');
+        
         
     } catch (error) {
         console.error('Error posting user:', error);
