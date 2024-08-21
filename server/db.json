@@ -1,3 +1,12 @@
 {
-    "users": [{}]
+  "users": [
+    {
+      "nombre": "Carlos",
+      "apellidos": "Mena",
+      "id": "8332"
+    },
+    {
+      "id": "716d"
+    }
+  ]
 }
