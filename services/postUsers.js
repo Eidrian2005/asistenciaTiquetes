@@ -14,8 +14,6 @@ async function postUsers(usuario,email,contrasenia) {
             body: JSON.stringify(userData)
         });
         return await response.json();
-        console.log('datos almacenados');
-        
         
     } catch (error) {
         console.error('Error posting user:', error);
