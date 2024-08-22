@@ -11,6 +11,33 @@
       "usuario": "Eidrian",
       "email": "eidrian@gmail.com",
       "contrasenia": "1234"
+    },
+    {
+      "id": "d1e9",
+      "usuario": "Eidrian",
+      "email": "adios@gmail.com",
+      "contrasenia": "12345"
+    },
+    {
+      "id": "4971",
+      "usuario": "Alex",
+      "email": "Alexgmail.com",
+      "contrasenia": "12345"
+    },
+    {
+      "id": "7aca",
+      "usuario": "Alex",
+      "email": "Alex@gmail.com",
+      "contrasenia": "1234"
+    },
+    {
+      "id": "c269",
+      "usuario": "Eidrian",
+      "email": "usertest@gmail.com",
+      "contrasenia": "1234"
     }
+  ],
+  "historial": [
+    {}
   ]
 }
