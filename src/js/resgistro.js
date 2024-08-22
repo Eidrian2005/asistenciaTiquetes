@@ -33,23 +33,3 @@ guardar.addEventListener('click', async (event) =>{
 
 
 
-
-
-
-/*let registrar = document.getElementById("registroCuenta") // <-- esto llama al form que cree
-
-registrar.addEventListener('submit', (event)=>{ 
-    event.preventDefault() 
-    const email = document.querySelector('Email1').value
-    const contrasenia = document.querySelector('Password1').value
-
-    //const users = JSON.parse(localStorage.getItem('users')) || []    // <--- obtiene los datos de la llave 'users'
-
-    
-
-    users.push({email: email, contrasenia: contrasenia  }) // <- esto los "empuja" 
-    //localStorage.setItem('users', JSON.stringify(users)) // <- esto los guarda
-    alert('registro exitoso')
-
-    //window.location.href = 'login.html' // <-- para redirigir a la siguiente pagina
-})*/
