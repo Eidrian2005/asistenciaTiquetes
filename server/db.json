@@ -5,6 +5,12 @@
       "usuario": "Pipe",
       "email": "pipe@gmail.com",
       "contrasenia": "1234"
+    },
+    {
+      "id": "e7fd",
+      "usuario": "Eidrian",
+      "email": "eidrian@gmail.com",
+      "contrasenia": "1234"
     }
   ]
 }

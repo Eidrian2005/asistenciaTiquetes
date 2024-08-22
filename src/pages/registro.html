@@ -14,34 +14,37 @@
 
     <div class="container">
 
-        <div class="">
+        <div class="registro-panel">
+
+            <div class="logo">
+                <img src="#" alt="Logo">
+            </div>
+
+            <h2>Registro</h2>
 
             <div class="">
 
                 <form class="" id="registroCuenta">
 
-                    <div class="mb-3 colorletra">
-
+                    <div class="form-grupo">
                         <label for="usuario1" class="form-label">Nombre de usuario</label>
-                        <input type="text" class="formControl" id="usuario1">
+                        <input type="text" class="estilosInput" id="usuario1" required>
                     </div>
 
-                    <div class="mb-3 colorletra">
-
+                    <div class="form-grupo">
                         <label for="Email1" class="form-label">Correo electronico</label>
-                        <input type="email" class="formControl" id="Email1" aria-describedby="emailHelp">
+                        <input class="estilosInput" type="email" id="Email1" name="email" required>
                     </div>
 
-                    <div class="mb-3 colorletra">
-
+                    <div class="form-grupo">
                         <label for="Password1" class="" >Contraseña</label>
-                        <input type="password" class="formControl" id="Password1">
+                        <input  class="estilosInput" type="password" id="Password1" name="password" required>
                     </div>
 
                     <button type="submit" class="" id="guardar">Crear cuenta</button>
 
                     <br>
-                    <a href="">Ya tienes una cuenta?</a>
+                    <p>¿Ya tienes cuenta? <a href="#">Iniciar Sesion</a></p>
 
                 </form>
 

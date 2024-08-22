@@ -45,7 +45,7 @@ label {
     color: #fff;
 }
 
-input[type="text"], input[type="password"] {
+.estilosInput{
     width: 380px;
     height: 40px;
     padding: 10px;
@@ -54,6 +54,8 @@ input[type="text"], input[type="password"] {
     background-color: #444;
     color: #fff;
 }
+
+
 
 button[type="submit"] {
     width: 100%;
