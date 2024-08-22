@@ -5,8 +5,10 @@ const guardar = document.getElementById('guardar')
 const usuario = document.getElementById('usuario1')
 const email = document.getElementById('Email1')
 const contrasenia = document.getElementById('Password1')
+const popver = document.getElementById('popover')
+const botonClose = document.getElementById('btnClose')
 
-guardar.addEventListener('submit', async (event) =>{
+guardar.addEventListener('click', async (event) =>{
     event.preventDefault() // <--- esto evita que la pagina se recarge por si sola xd no olvidar (Eidrian)
     if (usuario.value != '' && email.value != '' && contrasenia != '') {
 
@@ -16,16 +18,22 @@ guardar.addEventListener('submit', async (event) =>{
             const userRegistered = users.find(user => user.email === email.value) // <---- usa un .find para buscar el users (Eidrian)
 
             if (userRegistered) {  // <-- validacion para evitar que se repitan usuarios
-            console.log('Usuario ya registrado');
-
-            /*
-            if (popver.style.display === 'none' || popver.style.display === '') {
-                popver.style.display = 'block'; // no esta sirviendo ni el log por alguna razon (Eidrian)
-            }*/
+                console.log('Usuario ya registrado')
+                
+                if(popver.style.display === 'none' || popver.style.display === '') {
+                    
+                    popver.style.display = 'block';
+                }else{
+                    botonClose.addEventListener('click', function () {
+                        if (popver.style.display === 'block') {
+                            popver.style.display = 'none'
+                        }
+                    })
+                }
 
             }else{
-            postUsers(usuario.value, email.value, contrasenia.value)
-            window.location.href = 'login.html' // <-- para redirigir a la siguiente pagina (Eidrian)
+                postUsers(usuario.value, email.value, contrasenia.value)
+                window.location.href; // <-- para redirigir a la siguiente pagina (Eidrian)
             }
 
     }else{
