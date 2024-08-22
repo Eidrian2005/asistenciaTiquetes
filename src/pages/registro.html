@@ -33,7 +33,7 @@
 
                     <div class="form-grupo">
                         <label for="Email1" class="form-label">Correo electronico</label>
-                        <input class="estilosInput" type="email" id="Email1" name="email" required>
+                        <input class="estilosInput" type="email" id="Email1" required>
                     </div>
 
                     <div class="form-grupo">
@@ -42,6 +42,12 @@
                     </div>
 
                     <button type="submit" class="" id="guardar">Crear cuenta</button>
+
+                    <div id="popover" class="estilosPop">
+                        <h3>Email ya registrado</h3>
+                        <p id="consejo">Verifique que los datos hayan sido correctos</p>
+                        <button id="btnClose"></button>
+                    </div>
 
                     <br>
                     <p>¿Ya tienes cuenta? <a href="#">Iniciar Sesion</a></p>

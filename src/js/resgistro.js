@@ -17,6 +17,12 @@ guardar.addEventListener('submit', async (event) =>{
 
             if (userRegistered) {  // <-- validacion para evitar que se repitan usuarios
             console.log('Usuario ya registrado');
+
+            /*
+            if (popver.style.display === 'none' || popver.style.display === '') {
+                popver.style.display = 'block'; // no esta sirviendo ni el log por alguna razon (Eidrian)
+            }*/
+
             }else{
             postUsers(usuario.value, email.value, contrasenia.value)
             window.location.href = 'login.html' // <-- para redirigir a la siguiente pagina (Eidrian)

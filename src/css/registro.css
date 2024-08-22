@@ -86,3 +86,26 @@ a {
 a:hover {
     color: #23527c;
 }
+
+.estilosPop{
+    display: none;
+    position: absolute;
+    color: #ffffff;
+    width: 550px;
+    background-color: #3a3b3c;
+    border: 1px solid #3a3b3c;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+#btnClose{
+    border-radius: 10px;
+    background-color: #c52626;
+    color: #fff;
+    cursor: pointer;
+}
+
+#btnClose:hover{
+    color: #c52626;
+}
