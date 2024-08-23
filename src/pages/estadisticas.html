@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/estadisticas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <title>Estadisticas</title>
 </head>
 <body>
@@ -12,6 +13,9 @@
             <div id="contenedorHijo">
                 <table id="tabla">
                     <h1>Estadisticas Diaras De consulta</h1>
+                    <div id="contenedorNav">
+                        <i class="fa-solid fa-magnifying-glass"></i> <input type="text" id="buscador">
+                    </div>
                     <thead>
                         <tr>
                             <th clas class="titulo">Acciones</th>
@@ -24,9 +28,8 @@
                     <tbody>
                         <div id=""><tr>
                             <td class="buttons">
-                                <button class="btnEdit">Editar</button>
+
                                 <button class="btnBorrar">Eliminar</button>
-                                <button class="btnAceptar">Aceptar</button>
                             </td>
                             <td>Juan perez</td>
                             <td>2024-08-22</td>
@@ -40,6 +43,6 @@
     </div>
     
 
-    <script src="../js/estadisticas.js"></script>
+    <script src="../js/estadisticas.js" type="module"></script>
 </body>
 </html>

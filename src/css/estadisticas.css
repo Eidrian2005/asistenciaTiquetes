@@ -63,19 +63,18 @@
     cursor: pointer;
 }
 
-.btnAceptar:hover{
-    background-color: #3d83a1;
-}
-
 .btnBorrar:hover{
     background-color: #b63030;
 }
 
-.btnEdit:hover{
-    background-color: #51ad48;
+#buscador{
+    border-radius: 5px;
+    border: 1px #000 solid;
 }
 
-
+#contenedorNav{
+    margin: 10px;
+}
 
 /*zona de la tabla*/
 
