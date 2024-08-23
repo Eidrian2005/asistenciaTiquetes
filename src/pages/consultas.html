@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pagina / Consultas</title>
+    <title>Página / Consultas</title>
     <link rel="stylesheet" href="/src/css/consultas.css" />
   </head>
   <body>
     <div class="lista-consulta" id="lista-consulta">
       <div class="form-grupo">
-        <label for="nombrestudiante">Nombre de Estudiante</label>
+        <label for="nombrestudiante">Consultas</label>
         <input
           type="text"
           id="nombrestudiante"
@@ -17,18 +17,50 @@
         />
       </div>
       <div class="form-grupo">
-        <label for="consultatexto">Consultas</label>
+        <label for="consultatexto">Detalles de Consultas</label>
         <textarea
-          id="nombrestudiante"
+          id="consultatexto"
           rows="4"
           placeholder="Ingrese su Consulta"
         ></textarea>
+        
+        <div class="form-grupo">
+          <label for="tipo-consulta">Tipo de Consulta</label>
+          <select id="tipo-consulta">
+            <option value="" disabled selected>Seleccione el tipo de consulta</option>
+            <option value="academica">Académica</option>
+            <option value="administrativa">Administrativa</option>
+            <option value="personal">Personal</option>
+          </select>
+        </div>
+
+        <div class="form-grupo">
+          <label for="fecha-hora">Fecha y Hora</label>
+          <input
+            type="date"
+            id="fecha"
+          />
+          <input
+            type="time"
+            id="hora"
+          />
+        </div>
       </div>
       <div class="form-grupo">
-        <button onclick="añadirConsulta()">Agregar Consulta</button>
+        <button onclick="agregarConsulta()">Agregar Consulta</button>
+        <button onclick="mostrarConsultas()">Mostrar Consultas</button>
       </div>
-
-      <!-- eta vaina hace que salgan-->
     </div>
+
+    <div class="consulta-contenedor" id="consulta-contenedor" style="display:none;">
+
+    </div>
+    
+    <script src="/src/js/consultas.js"></script>
+  </body>
+</html>
+
+
+
   </body>
 </html>
