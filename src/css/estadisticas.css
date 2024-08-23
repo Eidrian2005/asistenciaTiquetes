@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#padre{
+    margin-top: 5vw;
+}
+
+.border{
+    border: #000 solid;
+}
+
+.fontsize{
+    font-size: 15px;
+    justify-items: center;
+    margin: auto;
+    height: 40px;
+}
+
+#contenedorPadre{
+    width: 65vw;
+    height: 25vw;
+    text-align: center;
+    margin: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+    border-radius: 5px;
+}
+
+#contenedorHijo{
+    margin: 20px 10px 0 10px;
+}
+
+.btnEdit{
+    background-color: #6ac462;
+    border: none;
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btnBorrar{
+    background-color: #c52626;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 70px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btnAceptar{
+    background-color: #4e99b9;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 70px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btnBorrar:hover{
+    background-color: #b63030;
+}
+
+#buscador{
+    border-radius: 5px;
+    border: 1px #000 solid;
+}
+
+#contenedorNav{
+    margin: 10px;
+}
+
+/*zona de la tabla*/
+
+.titulo{
+    background-color: #6ac462;
+    color: #fff;
+}
+
+#tabla{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 1px solid #ddd;
+}
+
+th{
+background-color: #f2f2f2;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.buttons button{
+    margin: 0 5px;
+    padding: 5px 10px;
+}

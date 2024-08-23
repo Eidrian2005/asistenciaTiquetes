@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Asistencia </title>
+    <link rel="stylesheet" href="/src/css/login.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="login-panel">
+
+            <div class="logo">
+                <img src="#" alt="Logo">
+            </div>
+
+            <h2>Iniciar sesión</h2>
+
+            <form id="login-form">
+
+                <div class="form-grupo">
+                    <label for="usuario1" class="form-label">Nombre de usuario</label>
+                    <input type="text" class="estilosInput" id="usuario1">
+                </div>
+
+
+                <div class="form-grupo">
+                    <label for="Email1">Correo electrónico:</label>
+                    <input class="estilosInput" type="email" id="Email1" name="email" required>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="Password1">Contraseña:</label>
+                    <input  class="estilosInput" type="password" id="Password1" name="password" required>
+                </div>
+
+                <button type="submit">Iniciar sesión</button>
+
+            </form>
+
+            <p>¿No tienes cuenta? <a href="#">Crear cuenta</a></p>
+
+        </div>
+
+    </div>
+
+    <script src="/src/js/login.js" type="module"></script>
+</body>
+</html>

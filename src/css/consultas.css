@@ -1,0 +1,110 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    min-height: 100vh;
+}
+
+h1{
+    text-align: center;
+    color: #4caf50;
+    margin-bottom: 30px; /* Añade espacio debajo del título */
+}
+
+.form-grupo {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Para que los elementos se adapten al contenedor */
+    max-width: 400px; /* Ancho máximo del formulario */
+}
+
+label {
+    font-size: 14px;
+    color: #bfbfbf;
+    margin-bottom: 5px;
+    width: 100%; /* Alinea el texto del label con el input */
+    text-align: left; /* Asegura que el texto esté alineado a la izquierda */
+}
+
+input[type="text"],
+textarea{
+    background-color: #2a2a2a;
+    border: 1px solid #3f3f3f;
+    padding: 10px;
+    font-size: 14px;
+    color: #f5f5f5;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+    width: 100%; /* Para que los inputs ocupen todo el ancho disponible */
+}
+
+input[type="text"]:focus,
+textarea:focus{
+    border-color: #4caf50;
+}
+
+textarea{
+    resize: none;
+    height: 100px; /* Ajusta la altura del textarea */
+}
+
+button {
+    background-color: #4caf50;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    width: 100%; /* El botón ocupa todo el ancho disponible */
+    max-width: 150px; /* Ancho máximo del botón */
+}
+
+button:hover {
+    background: #45a049;
+}
+
+.lista-consulta {
+    margin-top: 20px;
+    background-color: #2a2a2a;
+    padding: 15px;
+    border-radius: 5px;
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Centra la lista */
+}
+
+.lista-consulta h2 {
+    color: #4caf50;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center; /* Centra el subtítulo */
+}
+
+.consulta-item {
+    background-color: #3f3f3f;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: #f5f5f5;
+    width: 100%; /* Asegura que cada ítem ocupe todo el ancho disponible */
+    max-width: 500px; /* Limita el ancho de cada ítem */
+    text-align: center; /* Centra el texto dentro de cada ítem */
+}
+
+.consulta-item:last-child{
+    margin-bottom: 0;
+}

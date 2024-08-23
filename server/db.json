@@ -1,3 +1,29 @@
 {
-    "users": [{}]
+  "users": [
+    {
+      "id": "67a4",
+      "usuario": "Pipe",
+      "email": "pipe@gmail.com",
+      "contrasenia": "1234"
+    },
+    {
+      "id": "e7fd",
+      "usuario": "Eidrian",
+      "email": "eidrian@gmail.com",
+      "contrasenia": "1234"
+    }
+  ],
+  "historial": [
+    {
+
+    }
+  ],
+
+  "Consultas": [{
+      "usuario": "Eidrian",
+      "Consulta": "Quiero crear una bomba",
+      "Detalle de consulta": "necesito saber los pasos y ingredientes",
+      "fecha": "8/23/2024",
+      "hora": "3:00pm"
+  }]
 }
