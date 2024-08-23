@@ -1,3 +1,4 @@
+import { postCons } from '../../services/postCons.js';
 
 const consultas = [];
 
