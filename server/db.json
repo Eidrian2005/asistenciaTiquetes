@@ -15,14 +15,15 @@
   ],
   "historial": [
     {
-
+      
     }
   ],
 
   "Consultas": [{
       "usuario": "Eidrian",
       "Consulta": "Quiero crear una bomba",
-      "Detalle de consulta": "necesito saber los pasos y ingredientes",
+      "detalle": "necesito saber los pasos y ingredientes",
+      "tipo": "academico",
       "fecha": "8/23/2024",
       "hora": "3:00pm"
   }]
