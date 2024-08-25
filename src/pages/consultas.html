@@ -2,65 +2,55 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página / Consultas</title>
-    <link rel="stylesheet" href="/src/css/consultas.css" />
+    <link rel="stylesheet" href="/src/css/consultas.css">
   </head>
+
   <body>
+
     <div class="lista-consulta" id="lista-consulta">
+
       <div class="form-grupo">
         <label for="nombrestudiante">Consultas</label>
-        <input
-          type="text"
-          id="nombrestudiante"
-          placeholder="Ingrese su Nombre"
-        />
+        <input type="text" id="consulta" placeholder="Ingrese su Consulta">
       </div>
+
       <div class="form-grupo">
+
         <label for="consultatexto">Detalles de Consultas</label>
-        <textarea
-          id="consultatexto"
-          rows="4"
-          placeholder="Ingrese su Consulta"
-        ></textarea>
-        
-        <div class="form-grupo">
-          <label for="tipo-consulta">Tipo de Consulta</label>
-          <select id="tipo-consulta">
+          <textarea id="consultatexto" rows="4" placeholder="Detalle su Consulta"></textarea>
+          <div class="form-grupo">
+        <label for="tipo-consulta">Tipo de Consulta</label>
+
+        <select id="tipo-consulta">
             <option value="" disabled selected>Seleccione el tipo de consulta</option>
             <option value="academica">Académica</option>
             <option value="administrativa">Administrativa</option>
             <option value="personal">Personal</option>
-          </select>
-        </div>
+        </select>
+
+      </div>
 
         <div class="form-grupo">
           <label for="fecha-hora">Fecha y Hora</label>
-          <input
-            type="date"
-            id="fecha"
-          />
-          <input
-            type="time"
-            id="hora"
-          />
+          <input type="date" id="fecha">
+          <input type="time" id="hora">
         </div>
+
       </div>
+
       <div class="form-grupo">
-        <button onclick="agregarConsulta()">Agregar Consulta</button>
-        <button onclick="mostrarConsultas()">Mostrar Consultas</button>
+        <button id="btnAgregar">Agregar Consulta</button>
+        <button id="btnMostrar">Mostrar Consultas</button>
       </div>
+
     </div>
 
     <div class="consulta-contenedor" id="consulta-contenedor" style="display:none;">
 
     </div>
-    
-    <script src="/src/js/consultas.js"></script>
-  </body>
-</html>
 
-
-
-  </body>
+    <script src="/src/js/consultas.js" type="module"></script>
+</body>
 </html>

@@ -11,20 +11,34 @@
       "usuario": "Eidrian",
       "email": "eidrian@gmail.com",
       "contrasenia": "1234"
+    },
+    {
+      "id": "b6b0",
+      "usuario": "Carlos",
+      "email": "Carlos@gmail.com",
+      "contrasenia": "1234"
+    },
+    {
+      "id": "1640",
+      "usuario": "alex",
+      "email": "Alex@gmail.com",
+      "contrasenia": "1234"
     }
   ],
   "historial": [
     {
-      
+      "id": "7a3a"
     }
   ],
-
-  "Consultas": [{
+  "Consultas": [
+    {
       "usuario": "Eidrian",
       "Consulta": "Quiero crear una bomba",
       "detalle": "necesito saber los pasos y ingredientes",
       "tipo": "academico",
       "fecha": "8/23/2024",
-      "hora": "3:00pm"
-  }]
+      "hora": "3:00pm",
+      "id": "fd38"
+    }
+  ]
 }

@@ -6,7 +6,7 @@ const usuario = document.getElementById('usuario1')
 const email = document.getElementById('Email1')
 const contrasenia = document.getElementById('Password1')
 const popver = document.getElementById('popover')
-const botonClose = document.getElementById('btnClose')
+const btnClose = document.getElementById('btnClose')
 
 guardar.addEventListener('click', async (event) =>{
     event.preventDefault() // <--- esto evita que la pagina se recarge por si sola xd no olvidar (Eidrian)
@@ -18,22 +18,11 @@ guardar.addEventListener('click', async (event) =>{
             const userRegistered = users.find(user => user.email === email.value) // <---- usa un .find para buscar el users (Eidrian)
 
             if (userRegistered) {  // <-- validacion para evitar que se repitan usuarios
-                console.log('Usuario ya registrado')
-                
-                if(popver.style.display === 'none' || popver.style.display === '') {
-                    
-                    popver.style.display = 'block';
-                }else{
-                    botonClose.addEventListener('click', function () {
-                        if (popver.style.display === 'block') {
-                            popver.style.display = 'none'
-                        }
-                    })
-                }
-
+                console.log('Usuario ya registrado');
+                popver.classList.add('visible');
             }else{
-                postUsers(usuario.value, email.value, contrasenia.value)
-                window.location.href; // <-- para redirigir a la siguiente pagina (Eidrian)
+            postUsers(usuario.value, email.value, contrasenia.value)
+            window.location.href = 'login.html' // <-- para redirigir a la siguiente pagina (Eidrian)
             }
 
     }else{
@@ -41,3 +30,8 @@ guardar.addEventListener('click', async (event) =>{
         
     }
 })
+
+btnClose.addEventListener('click', (event) => {
+    event.preventDefault(); // Evita que el formulario se envíe
+    popver.classList.remove('visible'); // Ocultar el popover
+});

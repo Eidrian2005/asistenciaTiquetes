@@ -109,3 +109,7 @@ a:hover {
 #btnClose:hover{
     color: #c52626;
 }
+
+.estilosPop.visible {
+    display: block;
+}
