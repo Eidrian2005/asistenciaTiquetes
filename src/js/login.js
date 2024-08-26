@@ -20,7 +20,7 @@ document.getElementById("login-form").addEventListener("submit", async (e) => {
 
         if (validUser) {
             console.log("Inicio de sesión exitoso.");
-            localStorage.setItem('iniciado', 'true');
+            localStorage.setItem('iniciado', 'true'); // validacion de inicio de sesion 
             window.location.href = 'consultas.html'
         } else {
             console.log("Usuario o contraseña incorrectos.");
