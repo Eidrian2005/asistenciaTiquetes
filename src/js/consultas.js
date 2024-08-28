@@ -4,6 +4,11 @@ import { getUsers } from '../../services/getUsers.js';
 import { postHist } from '../../services/postHist.js';
 
 
+let nombre = localStorage.getItem("usuario")
+
+
+
+
 if (localStorage.getItem('iniciado') !== 'true') {
   window.location.href = 'login.html';
 }
@@ -32,6 +37,7 @@ async function agregarConsulta() {
 
 
   const nombreUsuario = usuario[0].usuario; //funciona cuando solo hay un usuario en la lista
+console.log(nombreUsuario);
 
 
   /*zona de inputs*/
@@ -92,7 +98,8 @@ async function mostrarConsultas() {
     const fechaHora = consulta.hora ? `${consulta.fecha} ${consulta.hora}` : consulta.fecha;
 
     divConsulta.innerHTML = `
-    <div class="consulta-nombre">Nombre: ${consulta.usuario}</div>
+    <div class= "btnEli"><button>Eliminar</button></div>
+    <div class="consulta-nombre">Nombre: ${JSON.stringify(nombre)}</div>
       <div class="consulta-nombre">Consulta: ${consulta.consulta}</div>
       <div class="consulta-detalle">Detalles: ${consulta.detalle}</div>
       <div class="consulta-tipo">Tipo: ${consulta.tipo}</div>
