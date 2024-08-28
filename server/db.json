@@ -28,6 +28,14 @@
   "historial": [
     {
       "id": "7a3a"
+    },
+    {
+      "id": "acbc",
+      "consulta": "Terminar el proyecto",
+      "detalle": "Terminar todas las pendientes del proyecto",
+      "tipo": "academica",
+      "fecha": "2024-08-27",
+      "hora": "19:37"
     }
   ],
   "Consultas": [
@@ -39,6 +47,14 @@
       "fecha": "8/23/2024",
       "hora": "3:00pm",
       "id": "fd38"
+    },
+    {
+      "id": "d6b0",
+      "consulta": "Terminar el proyecto",
+      "detalle": "Terminar todas las pendientes del proyecto",
+      "tipo": "academica",
+      "fecha": "2024-08-27",
+      "hora": "19:37"
     }
   ]
 }

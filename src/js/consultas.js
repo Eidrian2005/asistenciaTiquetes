@@ -1,6 +1,7 @@
 import { postCons } from '../../services/postCons.js';
 //import { getCons } from '../../services/obtenerCons.js';
 import { getUsers } from '../../services/getUsers.js';
+import { postHist } from '../../services/postHist.js';
 
 if (localStorage.getItem('iniciado') !== 'true') {
   window.location.href = 'login.html';
@@ -46,6 +47,7 @@ async function agregarConsulta() {
   }
 
   postCons(usuario.usuario, consulta, detalle, tipo, fecha, hora)
+  postHist(usuario.usuario, consulta, detalle, tipo, fecha, hora)
   const consulta1 = {
     nombre: usuario.usuario,
     consulta: consulta,
