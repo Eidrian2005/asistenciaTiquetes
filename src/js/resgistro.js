@@ -15,7 +15,7 @@ guardar.addEventListener('click', async (event) =>{
         const users = await getUsers() // la funcion debe tener el await y el async para que sea asincronica si no causa error- (Eidrian)
         //y no me busca el usuario para realizar la validacion (Eidrian)
 
-            const userRegistered = users.find(user => user.email === email.value) // <---- usa un .find para buscar el users (Eidrian)
+            const userRegistered = users.find(user => user.email === email.value || user.usuario === usuario.value) // <---- usa un .find para buscar el users (Eidrian)
 
             if (userRegistered) {  // <-- validacion para evitar que se repitan usuarios
                 console.log('Usuario ya registrado');
@@ -27,7 +27,6 @@ guardar.addEventListener('click', async (event) =>{
 
     }else{
         console.log("no se pueden registrar campos vacios");
-        
     }
 })
 
