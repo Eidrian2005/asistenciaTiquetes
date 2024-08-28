@@ -1,7 +1,8 @@
 import { postCons } from '../../services/postCons.js';
-//import { getCons } from '../../services/obtenerCons.js';
+import { getCons } from '../../services/obtenerCons.js';
 import { getUsers } from '../../services/getUsers.js';
 import { postHist } from '../../services/postHist.js';
+
 
 if (localStorage.getItem('iniciado') !== 'true') {
   window.location.href = 'login.html';
@@ -29,9 +30,9 @@ async function agregarConsulta() {
 
   const usuario = await getUsers()
 
-    usuario.forEach(usuario => {
-        usuario.usuario;
-    });
+
+  const nombreUsuario = usuario[0].usuario; //funciona cuando solo hay un usuario en la lista
+
 
   /*zona de inputs*/
   const consulta = document.getElementById("consulta").value;
@@ -70,7 +71,11 @@ async function agregarConsulta() {
 
 
 
-function mostrarConsultas() {
+async function mostrarConsultas() {
+
+
+  const consultas = await getCons();
+
   const contenedor = document.getElementById("consulta-contenedor");
   contenedor.innerHTML = ''; 
 
@@ -83,11 +88,15 @@ function mostrarConsultas() {
   consultas.forEach((consulta, index) => {
     const divConsulta = document.createElement('div');
     divConsulta.className = 'consulta';
+
+    const fechaHora = consulta.hora ? `${consulta.fecha} ${consulta.hora}` : consulta.fecha;
+
     divConsulta.innerHTML = `
-      <div class="consulta-nombre">Nombre: ${consulta.nombre}</div>
-      <div class="consulta-detalle">Consulta: ${consulta.detalle}</div>
+    <div class="consulta-nombre">Nombre: ${consulta.usuario}</div>
+      <div class="consulta-nombre">Consulta: ${consulta.consulta}</div>
+      <div class="consulta-detalle">Detalles: ${consulta.detalle}</div>
       <div class="consulta-tipo">Tipo: ${consulta.tipo}</div>
-      <div class="consulta-fecha">Fecha y Hora: ${consulta.fechaHora}</div>
+      <div class="consulta-fecha">Fecha y Hora: ${fechaHora}</div>
     `;
     contenedor.appendChild(divConsulta);
   });

@@ -1,60 +1,16 @@
 {
   "users": [
     {
-      "id": "67a4",
-      "usuario": "Pipe",
-      "email": "pipe@gmail.com",
-      "contrasenia": "1234"
-    },
-    {
-      "id": "e7fd",
+      "id": "8039",
       "usuario": "Eidrian",
       "email": "eidrian@gmail.com",
-      "contrasenia": "1234"
-    },
-    {
-      "id": "b6b0",
-      "usuario": "Carlos",
-      "email": "Carlos@gmail.com",
-      "contrasenia": "1234"
-    },
-    {
-      "id": "1640",
-      "usuario": "alex",
-      "email": "Alex@gmail.com",
-      "contrasenia": "1234"
+      "contrasenia": "12345"
     }
   ],
   "historial": [
-    {
-      "id": "7a3a"
-    },
-    {
-      "id": "acbc",
-      "consulta": "Terminar el proyecto",
-      "detalle": "Terminar todas las pendientes del proyecto",
-      "tipo": "academica",
-      "fecha": "2024-08-27",
-      "hora": "19:37"
-    }
+
   ],
   "Consultas": [
-    {
-      "usuario": "Eidrian",
-      "Consulta": "Quiero crear una bomba",
-      "detalle": "necesito saber los pasos y ingredientes",
-      "tipo": "academico",
-      "fecha": "8/23/2024",
-      "hora": "3:00pm",
-      "id": "fd38"
-    },
-    {
-      "id": "d6b0",
-      "consulta": "Terminar el proyecto",
-      "detalle": "Terminar todas las pendientes del proyecto",
-      "tipo": "academica",
-      "fecha": "2024-08-27",
-      "hora": "19:37"
-    }
+
   ]
 }
