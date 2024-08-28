@@ -3,9 +3,10 @@ import { getUsers } from "../../services/getUsers";
 import { postHist } from '../../services/postHist.js';
 import { getHist } from '../../services/getHist.js';
 import { deleteHist } from '../../services/deleteHist.js';
+ 
 
 async function mostrarConsultas() {
-    const consultas = await getHist(); // Obtener datos del historial
+    const consultas = await getHist(); 
 
     const tabla = document.getElementById("tabla");
     
@@ -15,11 +16,9 @@ async function mostrarConsultas() {
         return;
     }
 
-    consultas.forEach((consulta, index) => {
+    consultas.forEach((consulta) => {
         const tdConsulta = document.createElement('tr');
-        const btnEliminar = document.createElement('button')
         tdConsulta.className = 'consulta';
-        
 
         // Verificación de la hora antes de construir la cadena fechaHora
         const fecha = consulta.hora ? `${consulta.fecha}` : consulta.fecha;
@@ -33,23 +32,23 @@ async function mostrarConsultas() {
             <td>${fecha}</td>
             <td>${Hora}</td>
         `;
-        tabla.appendChild(tdConsulta)
+        tabla.appendChild(tdConsulta);
 
+        const btnEliminar = tdConsulta.querySelector('.btnBorrar');
 
         btnEliminar.addEventListener('click', async function () {
-            
-            const eliminar = await deleteHist()
-            
-        })
+            try {
+                // Asegúrate de pasar el ID de la consulta al llamar a deleteHist
+                await deleteHist(consulta.id); 
+                tdConsulta.remove(); // Elimina el elemento del DOM si la eliminación es exitosa
+            } catch (error) {
+                console.error('Error al eliminar la consulta:', error);
+                alert('No se pudo eliminar la consulta. Por favor, intente de nuevo.');
+            }
+        });
     });
-
 }
 
-mostrarConsultas()
 
-
-
-
-
-
+mostrarConsultas();
 

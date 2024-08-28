@@ -5,12 +5,31 @@
       "usuario": "Eidrian",
       "email": "eidrian@gmail.com",
       "contrasenia": "12345"
+    },
+    {
+      "id": "62ed",
+      "usuario": "Pipe",
+      "email": "pipe@gmail.com",
+      "contrasenia": "1234"
     }
   ],
-  "historial": [
-
-  ],
+  "historial": [],
   "Consultas": [
-
+    {
+      "id": "77b9",
+      "consulta": "dolor de rodilla",
+      "detalle": "me duele",
+      "tipo": "personal",
+      "fecha": "2024-08-09",
+      "hora": "11:29"
+    },
+    {
+      "id": "22fc",
+      "consulta": "aa",
+      "detalle": "a",
+      "tipo": "academica",
+      "fecha": "2024-08-28",
+      "hora": "13:55"
+    }
   ]
 }
