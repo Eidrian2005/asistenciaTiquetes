@@ -8,7 +8,7 @@
     "start": "parcel src/pages/login.html --open",
     "begin": "parcel src/pages/registro.html --open",
     "go": "parcel src/pages/estadisticas.html --open",
-    "iniciar": "parcel src/pages/consulta.html --open"
+    "iniciar": "parcel src/pages/consultas.html --open"
   },
   "keywords": [],
   "author": "",
