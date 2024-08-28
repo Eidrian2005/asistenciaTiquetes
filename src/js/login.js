@@ -14,6 +14,7 @@ document.getElementById("login-form").addEventListener("submit", async (e) => {
 
     try { // <--- esto es como un bloque que hace el "intento" de correr el codigo si esto falla va el catch (Eidrian)
         const users = await getUsers();
+        
         const validUser = users.some( // <--- el some es como el find busca dentro de un array si hay algo parecido a lo que pide la tarea especifica (Eidrian)
             (user) => user.email === email && user.contrasenia === contrasenia && user.usuario == usuario);
 
@@ -21,11 +22,8 @@ document.getElementById("login-form").addEventListener("submit", async (e) => {
             console.log("Inicio de sesión exitoso.");
             localStorage.setItem('iniciado', 'true');
 
-users.forEach(async element => {
-    localStorage.setItem('Usuario', usuario,)
-});
-
-
+            localStorage.setItem('usuario', JSON.stringify(usuario))
+        
             window.location.href = 'consultas.html'
         } else {
             console.log("Usuario o contraseña incorrectos.");

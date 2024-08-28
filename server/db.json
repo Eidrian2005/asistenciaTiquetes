@@ -5,12 +5,18 @@
       "usuario": "Eidrian",
       "email": "eidrian@gmail.com",
       "contrasenia": "12345"
+    },
+    {
+      "id": "e0ee",
+      "usuario": "Pipe",
+      "email": "pipe@gmail.com",
+      "contrasenia": "1234"
     }
   ],
   "historial": [
-
+    
   ],
   "Consultas": [
-
+    
   ]
 }
