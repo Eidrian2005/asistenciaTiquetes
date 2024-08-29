@@ -163,9 +163,12 @@ async function mostrarConsultas() {
       }
   })
 
+  
   btnOcultar.addEventListener('click', function () {
     btnMostrar.style.display = 'block';
       btnOcultar.style.display = 'none'
       contenedor.style.display = "none";
   })
+
+  
 }

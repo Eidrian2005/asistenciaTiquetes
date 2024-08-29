@@ -3,10 +3,12 @@ import { getUsers } from "../../services/getUsers";
 import { postHist } from '../../services/postHist.js';
 import { getHist } from '../../services/getHist.js';
 import { deleteHist } from '../../services/deleteHist.js';
- 
 
 
+const inputBusca = document.getElementById('buscador')
 const btnPrin = document.getElementById('btnPrin')
+
+
 
 btnPrin.addEventListener('click', function () {
     window.location.href = 'consultas.html'
