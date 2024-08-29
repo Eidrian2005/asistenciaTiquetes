@@ -7,24 +7,35 @@ import { deleteHist } from '../../services/deleteHist.js';
 
 const btnPrin = document.getElementById('btnPrin')
 
-
-
-
-
-
-
 document.getElementById('buscador').addEventListener('input', function () {
-    const filtro = this.value.toLowerCase(); // Captura el texto ingresado y lo convierte a minúsculas
+    const filtro = this.value.toLowerCase().trim(); // Captura el texto ingresado y lo convierte a minúsculas y elimina espacios
+
     const filas = document.querySelectorAll('#tabla tbody tr'); // Selecciona todas las filas de la tabla
 
+    let encontrado = false; // Variable para verificar si se encuentra una coincidencia
+
     filas.forEach(fila => {
-        const textoFila = fila.innerText.toLowerCase(); // Convierte el texto de la fila a minúsculas
+        const textoFila = fila.innerText.toLowerCase().trim(); // Obtiene el texto de la fila y lo convierte a minúsculas
+
+        // Verifica si la fila coincide exactamente con el filtro ingresado
         if (textoFila.includes(filtro)) {
             fila.style.display = ''; // Muestra la fila si coincide con el filtro
+            encontrado = true;
         } else {
             fila.style.display = 'none'; // Oculta la fila si no coincide
         }
     });
+
+    // Si no se encuentra ninguna coincidencia, oculta todas las filas
+    if (!encontrado) {
+        filas.forEach(fila => {
+            fila.style.display = 'none'; // Oculta todas las filas si no hay coincidencias
+        });
+    }
+});
+
+document.getElementById('btnPrin').addEventListener('click', function () {
+    window.location.href = 'consultas.html'; // Redirige a la página principal
 });
 
 
