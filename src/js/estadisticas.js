@@ -35,6 +35,7 @@ async function mostrarConsultas() {
 
         tdConsulta.innerHTML = `
             <td><button class="btnBorrar">Eliminar</button></td>
+            <td>${consulta.usuario}</td>
             <td>${consulta.consulta}</td>
             <td>${consulta.detalle}</td>
             <td>${consulta.tipo}</td>

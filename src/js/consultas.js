@@ -68,9 +68,7 @@ console.log(nombreUsuario);
 
   usuario.forEach(element => {
     
-    let nombres = JSON.parse(localStorage.getItem("usuario")) || []
-    console.log(nombres);
-
+    
     let usuarioLog = usuario.find(i => i.usuario === element.usuario)
 
     if (usuarioLog) {
