@@ -2,6 +2,7 @@ import { postCons } from '../../services/postCons.js';
 import { getCons } from '../../services/obtenerCons.js';
 import { getUsers } from '../../services/getUsers.js';
 import { postHist } from '../../services/postHist.js';
+import { deleteCons } from '../../services/deleteConst.js';
 
 
 
@@ -107,7 +108,7 @@ async function mostrarConsultas() {
     const fechaHora = consulta.hora ? `${consulta.fecha} ${consulta.hora}` : consulta.fecha;
 
     divConsulta.innerHTML = `
-    <div class= "btnEli"><button>Eliminar</button></div>
+    <div><button class = "btnEli">Eliminar</button></div>
     <div class="consulta-nombre">Nombre: ${consulta.usuario}</div>
       <div class="consulta-nombre">Consulta: ${consulta.consulta}</div>
       <div class="consulta-detalle">Detalles: ${consulta.detalle}</div>
@@ -115,6 +116,20 @@ async function mostrarConsultas() {
       <div class="consulta-fecha">Fecha y Hora: ${fechaHora}</div>
     `;
     contenedor.appendChild(divConsulta);
+
+    const btnEli = divConsulta.querySelector('.btnEli');
+
+    btnEli.addEventListener('click', async function () {
+      try {
+          // Asegúrate de pasar el ID de la consulta al llamar a deleteHist
+          await deleteCons(consulta.id); 
+          divConsulta.remove(); // Elimina el elemento del DOM si la eliminación es exitosa
+      } catch (error) {
+          console.error('Error al eliminar la consulta:', error);
+          alert('No se pudo eliminar la consulta. Por favor, intente de nuevo.');
+      }
+  })
+
     
   });
 
