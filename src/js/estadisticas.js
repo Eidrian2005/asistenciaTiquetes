@@ -5,8 +5,27 @@ import { getHist } from '../../services/getHist.js';
 import { deleteHist } from '../../services/deleteHist.js';
 
 
-const inputBusca = document.getElementById('buscador')
 const btnPrin = document.getElementById('btnPrin')
+
+
+
+
+
+
+
+document.getElementById('buscador').addEventListener('input', function () {
+    const filtro = this.value.toLowerCase(); // Captura el texto ingresado y lo convierte a minúsculas
+    const filas = document.querySelectorAll('#tabla tbody tr'); // Selecciona todas las filas de la tabla
+
+    filas.forEach(fila => {
+        const textoFila = fila.innerText.toLowerCase(); // Convierte el texto de la fila a minúsculas
+        if (textoFila.includes(filtro)) {
+            fila.style.display = ''; // Muestra la fila si coincide con el filtro
+        } else {
+            fila.style.display = 'none'; // Oculta la fila si no coincide
+        }
+    });
+});
 
 
 

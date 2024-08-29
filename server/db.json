@@ -8,9 +8,115 @@
     }
   ],
   "historial": [
-
+    {
+      "id": "a61f",
+      "usuario": "Eidrian",
+      "consulta": "hola",
+      "detalle": "a",
+      "tipo": "administrativa",
+      "fecha": "2024-08-29",
+      "hora": "14:09"
+    },
+    {
+      "id": "1e2c",
+      "usuario": "Eidrian",
+      "consulta": "ewdewr",
+      "detalle": "rwrwe",
+      "tipo": "personal",
+      "fecha": "2024-08-29",
+      "hora": "14:20"
+    },
+    {
+      "id": "7c97",
+      "usuario": "Eidrian",
+      "consulta": "aaaa",
+      "detalle": "aa",
+      "tipo": "academica",
+      "fecha": "2024-08-29",
+      "hora": "14:21"
+    },
+    {
+      "id": "dc81",
+      "usuario": "Eidrian",
+      "consulta": "aadfefdf",
+      "detalle": "fvfvfrtbtrb",
+      "tipo": "personal",
+      "fecha": "2024-08-29",
+      "hora": "14:22"
+    },
+    {
+      "id": "226d",
+      "usuario": "Eidrian",
+      "consulta": "try67i67uytg",
+      "detalle": "ertet",
+      "tipo": "administrativa",
+      "fecha": "2024-08-29",
+      "hora": "14:22"
+    },
+    {
+      "id": "ddb6",
+      "usuario": "Eidrian",
+      "consulta": "Como cocinar pescado",
+      "detalle": "no se como",
+      "tipo": "personal",
+      "fecha": "2024-08-29",
+      "hora": "14:22"
+    }
   ],
   "Consultas": [
-    
+    {
+      "id": "7806",
+      "usuario": "Eidrian",
+      "consulta": "hola",
+      "detalle": "a",
+      "tipo": "administrativa",
+      "fecha": "2024-08-29",
+      "hora": "14:09"
+    },
+    {
+      "id": "178a",
+      "usuario": "Eidrian",
+      "consulta": "ewdewr",
+      "detalle": "rwrwe",
+      "tipo": "personal",
+      "fecha": "2024-08-29",
+      "hora": "14:20"
+    },
+    {
+      "id": "0d77",
+      "usuario": "Eidrian",
+      "consulta": "aaaa",
+      "detalle": "aa",
+      "tipo": "academica",
+      "fecha": "2024-08-29",
+      "hora": "14:21"
+    },
+    {
+      "id": "1892",
+      "usuario": "Eidrian",
+      "consulta": "aadfefdf",
+      "detalle": "fvfvfrtbtrb",
+      "tipo": "personal",
+      "fecha": "2024-08-29",
+      "hora": "14:22"
+    },
+    {
+      "id": "bc6a",
+      "usuario": "Eidrian",
+      "consulta": "try67i67uytg",
+      "detalle": "ertet",
+      "tipo": "administrativa",
+      "fecha": "2024-08-29",
+      "hora": "14:22"
+    },
+    {
+      "id": "6a7a",
+      "usuario": "Eidrian",
+      "consulta": "Como cocinar pescado",
+      "detalle": "no se como",
+      "tipo": "personal",
+      "fecha": "2024-08-29",
+      "hora": "14:22"
+    }
   ]
 }
