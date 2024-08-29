@@ -6,21 +6,36 @@ import { postHist } from '../../services/postHist.js';
 
 
 
-if (localStorage.getItem('iniciado') !== 'true') {
-  window.location.href = 'login.html';
-}
+// if (localStorage.getItem('iniciado') !== 'true') {
+//   window.location.href = 'login.html';
+// }
 
 const consultas = [];
 const btnAgregar = document.getElementById('btnAgregar')
 const btnMostrar = document.getElementById('btnMostrar')
+const btnLog = document.getElementById('btnLog')
+const btnHist = document.getElementById('btnHist')
+const btnOcultar = document.getElementById('btnOcultar')
 
+
+
+btnHist.addEventListener('click', function () {
+  window.location.href = 'estadisticas.html'
+
+})
+
+btnLog.addEventListener('click', function () {
+  window.location.href = 'login.html'
+})
 
 btnAgregar.addEventListener('click',function () {
   agregarConsulta()
 })
 
 btnMostrar.addEventListener('click',function () {
-  mostrarConsultas() 
+  mostrarConsultas()
+  btnMostrar.style.display = 'none';
+    btnOcultar.style.display = 'block'
 })
 
 
@@ -119,4 +134,23 @@ async function mostrarConsultas() {
   });
 
   contenedor.style.display = "block";
+
+   const btnEli = divConsulta.querySelector('.btnEli');
+
+    btnEli.addEventListener('click', async function () {
+      try {
+          // Asegúrate de pasar el ID de la consulta al llamar a deleteHist
+          await deleteCons(consulta.id); 
+          divConsulta.remove(); // Elimina el elemento del DOM si la eliminación es exitosa
+      } catch (error) {
+          console.error('Error al eliminar la consulta:', error);
+          alert('No se pudo eliminar la consulta. Por favor, intente de nuevo.');
+      }
+  })
+
+  btnOcultar.addEventListener('click', function () {
+    btnMostrar.style.display = 'block';
+      btnOcultar.style.display = 'none'
+      contenedor.style.display = "none";
+  })
 }
