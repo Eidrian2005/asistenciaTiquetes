@@ -7,44 +7,6 @@
       "contrasenia": "12345"
     }
   ],
-  "historial": [
-    {
-      "id": "4aba",
-      "usuario": "Eidrian",
-      "consulta": "dewrw",
-      "detalle": "sdfdsf",
-      "tipo": "administrativa",
-      "fecha": "2024-08-29",
-      "hora": "10:38"
-    },
-    {
-      "id": "9bf5",
-      "usuario": "Eidrian",
-      "consulta": "dfg",
-      "detalle": "fdgdf",
-      "tipo": "academica",
-      "fecha": "2024-08-29",
-      "hora": "10:38"
-    }
-  ],
-  "Consultas": [
-    {
-      "id": "7b7c",
-      "usuario": "Eidrian",
-      "consulta": "dewrw",
-      "detalle": "sdfdsf",
-      "tipo": "administrativa",
-      "fecha": "2024-08-29",
-      "hora": "10:38"
-    },
-    {
-      "id": "cdfa",
-      "usuario": "Eidrian",
-      "consulta": "dfg",
-      "detalle": "fdgdf",
-      "tipo": "academica",
-      "fecha": "2024-08-29",
-      "hora": "10:38"
-    }
-  ]
+  "historial": [],
+  "Consultas": []
 }

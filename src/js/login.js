@@ -22,7 +22,7 @@ document.getElementById("login-form").addEventListener("submit", async (e) => {
             console.log("Inicio de sesión exitoso.");
             localStorage.setItem('iniciado', 'true');
 
-            localStorage.setItem('usuario', JSON.stringify(usuario))
+           
         
             window.location.href = 'consultas.html'
         } else {
