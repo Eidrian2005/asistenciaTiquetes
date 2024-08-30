@@ -13,16 +13,44 @@
       "contrasenia": "1234"
     }
   ],
-  "historial": [],
+  "historial": [
+    {
+      "id": "0b76",
+      "usuario": "Hola",
+      "consulta": "si",
+      "detalle": "Gracias",
+      "tipo": "personal",
+      "fecha": "2024-08-28",
+      "hora": "08:59"
+    },
+    {
+      "id": "96da",
+      "usuario": "Eidrian",
+      "consulta": "Ayuda a programar una inteligencia artificial basica",
+      "detalle": "necesito el asesoramiento ",
+      "tipo": "academica",
+      "fecha": "2024-08-30",
+      "hora": "09:00"
+    }
+  ],
   "Consultas": [
     {
-      "id": "b4b9",
-      "usuario": "Eidrian",
+      "id": "dae3",
+      "usuario": "Hola",
       "consulta": "si",
-      "detalle": "adios",
-      "tipo": "administrativa",
-      "fecha": "2024-08-29",
-      "hora": "20:55"
+      "detalle": "Gracias",
+      "tipo": "personal",
+      "fecha": "2024-08-28",
+      "hora": "08:59"
+    },
+    {
+      "id": "74bd",
+      "usuario": "Eidrian",
+      "consulta": "Ayuda a programar una inteligencia artificial basica",
+      "detalle": "necesito el asesoramiento ",
+      "tipo": "academica",
+      "fecha": "2024-08-30",
+      "hora": "09:00"
     }
   ]
 }

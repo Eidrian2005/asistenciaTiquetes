@@ -1,6 +1,3 @@
-import {postUsers} from '../../services/postUsers.js';
-import { getUsers } from "../../services/getUsers";
-import { postHist } from '../../services/postHist.js';
 import { getHist } from '../../services/getHist.js';
 import { deleteHist } from '../../services/deleteHist.js';
 
@@ -8,9 +5,11 @@ import { deleteHist } from '../../services/deleteHist.js';
 const inputBusca = document.getElementById('buscador')
 const btnPrin = document.getElementById('btnPrin')
 
+if (localStorage.getItem('iniciado') !== 'true') { //esto valida si alguien a iniciado sesion 
+     window.location.href = 'login.html'; //si no estas iniciado te redirige a la pagina login
+}
 
-
-btnPrin.addEventListener('click', function () {
+btnPrin.addEventListener('click', function () { //boton de redireccion a la pagina principal
     window.location.href = 'consultas.html'
 })
 
@@ -28,7 +27,6 @@ async function mostrarConsultas() {
         const tdConsulta = document.createElement('tr');
         tdConsulta.className = 'consulta';
 
-        // Verificación de la hora antes de construir fechaHora
         const fecha = consulta.hora ? `${consulta.fecha}` : consulta.fecha;
         const Hora = consulta.hora ? ` ${consulta.hora}` : consulta.hora;
 

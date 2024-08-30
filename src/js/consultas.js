@@ -7,11 +7,12 @@ import { deleteCons } from '../../services/deleteConst.js';
 
 
 
-// if (localStorage.getItem('iniciado') !== 'true') {
-//   window.location.href = 'login.html';
-// }
+if (localStorage.getItem('iniciado') !== 'true') { //esto valida si alguien a iniciado sesion 
+    window.location.href = 'login.html'; //si no estas iniciado te redirige a la pagina login
+}
 
-const consultas = [];
+const consultas = []; //contenedeor array de consultas
+//botones
 const btnAgregar = document.getElementById('btnAgregar')
 const btnMostrar = document.getElementById('btnMostrar')
 const btnLog = document.getElementById('btnLog')
@@ -44,7 +45,7 @@ btnMostrar.addEventListener('click',function () {
 
 
 
-async function agregarConsulta() {
+async function agregarConsulta() { 
 
   const usuario2 = await getUsers()
 
@@ -59,12 +60,12 @@ async function agregarConsulta() {
 /*fin de zona de inputs*/
 
   if (!consulta || !detalle || !tipo || !fecha || !hora) {
-    alert("Por favor, complete todos los campos antes de agregar la consulta.");
+    console.log("Por favor, complete todos los campos antes de agregar la consulta.");
     return;
   }
 
-
-      
+2
+      // se engargan de postear el contenido de los inputs a el "servidor"
       postCons(usuario, consulta, detalle, tipo, fecha, hora)
       postHist(usuario, consulta, detalle, tipo, fecha, hora)
   
@@ -75,17 +76,16 @@ async function agregarConsulta() {
     detalle: detalle,
     tipo: tipo,
     fechaHora: `${fecha} ${hora}`
-    
   };
 
-  consultas.push(consulta1);
+  consultas.push(consulta1); 
   document.getElementById('nombrestudiante').value = '';
   document.getElementById("consulta").value = '';
   document.getElementById("consultatexto").value = '';
   document.getElementById("tipo-consulta").value = '';
   document.getElementById("fecha").value = '';
   document.getElementById("hora").value = '';
-
+//esto vacia los inputs al enviar consultas xd
 }
 
 
@@ -99,16 +99,15 @@ async function mostrarConsultas() {
   contenedor.innerHTML = ''; 
 
   if (consultas.length === 0) {
-    alert("No hay consultas para mostrar.");
-    return;
+    popver.classList.add('visible');
   }
 
 
-  consultas.forEach((consulta) => {
+  consultas.forEach((consulta) => { //recore las consultas que es donde los obtiene del db.json y las escribe en el dom
     const divConsulta = document.createElement('div');
     divConsulta.className = 'consulta';
 
-    const fechaHora = consulta.hora ? `${consulta.fecha} ${consulta.hora}` : consulta.fecha;
+    const fechaHora = consulta.hora ? `${consulta.fecha} ${consulta.hora}` : consulta.fecha; //verificacion de la fecha y hora
 
     divConsulta.innerHTML = `
     <div><button class = "btnEli">Eliminar</button></div>
@@ -118,18 +117,18 @@ async function mostrarConsultas() {
       <div class="consulta-tipo">Tipo: ${consulta.tipo}</div>
       <div class="consulta-fecha">Fecha y Hora: ${fechaHora}</div>
     `;
-    contenedor.appendChild(divConsulta);
+    contenedor.appendChild(divConsulta); //esto hace aparecer el texto
 
     const btnEli = divConsulta.querySelector('.btnEli');
 
     btnEli.addEventListener('click', async function () {
       try {
-          // Asegúrate de pasar el ID de la consulta al llamar a deleteHist
+          // esto pasa el Id para la hora de eliminar con el Delete
           await deleteCons(consulta.id); 
-          divConsulta.remove(); // Elimina el elemento del DOM si la eliminación es exitosa
+          divConsulta.remove(); // Elimina el elemento del Dom si la eliminación es exitosa
       } catch (error) {
           console.error('Error al eliminar la consulta:', error);
-          alert('No se pudo eliminar la consulta. Por favor, intente de nuevo.');
+          console.log('No se pudo eliminar la consulta. Por favor, intente de nuevo.');
       }
   })
 
@@ -138,11 +137,15 @@ async function mostrarConsultas() {
 
   contenedor.style.display = "block";
   
-  btnOcultar.addEventListener('click', function () {
+  btnOcultar.addEventListener('click', function () { //esto solo es para ocultar la ventanilla de consultas
     btnMostrar.style.display = 'block';
       btnOcultar.style.display = 'none'
       contenedor.style.display = "none";
   })
 
+  btnClose.addEventListener('click', (event) => {
+    event.preventDefault(); // Evita que el formulario se envíe al cerrar el popover
+    popver.classList.remove('visible'); // Ocultar el popover
+});
   
 }

@@ -23,7 +23,7 @@ document.getElementById("login-form").addEventListener("submit", async (e) => {
             localStorage.setItem('iniciado', 'true');
             window.location.href = 'consultas.html'
         } else {
-            popver.classList.add('visible');
+            popver.classList.add('visible');// esto agrega la clase al popover para qe se muestre 
             console.log("Usuario o contraseña incorrectos.");
         }
     } catch (error) { //<--- esto pasa si el try falla al correr el codigo e imprime un codigo de especificamente error en la consola (Eidrian)
@@ -33,7 +33,7 @@ document.getElementById("login-form").addEventListener("submit", async (e) => {
 });
 
 btnClose.addEventListener('click', (event) => {
-    event.preventDefault(); // Evita que el formulario se envíe
+    event.preventDefault(); // Evita que el formulario se envíe al cerrar el popover
     popver.classList.remove('visible'); // Ocultar el popover
 });
 //me da risa como los comento porque parece que fuese por chatgpt pero no, esto lo investigue y comente yo(Eidrian) el codigo es de pipe
