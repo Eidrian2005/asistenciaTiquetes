@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "init": "json-server --watch server/db.json --port 3001",
-    "start": "parcel src/pages/consultas.html --open"
+    "start": "parcel src/pages/login.html --open"
   },
   "keywords": [],
   "author": "",

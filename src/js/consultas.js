@@ -13,12 +13,13 @@ if (localStorage.getItem('iniciado') !== 'true') { //esto valida si alguien a in
 
 const consultas = []; //contenedeor array de consultas
 //botones
+const btnClose = document.getElementById('btnClose')
 const btnAgregar = document.getElementById('btnAgregar')
 const btnMostrar = document.getElementById('btnMostrar')
 const btnLog = document.getElementById('btnLog')
 const btnHist = document.getElementById('btnHist')
 const btnOcultar = document.getElementById('btnOcultar')
-
+const popver = document.getElementById('popover')
 
 
 btnHist.addEventListener('click', function () {
@@ -64,7 +65,7 @@ async function agregarConsulta() {
     return;
   }
 
-2
+
       // se engargan de postear el contenido de los inputs a el "servidor"
       postCons(usuario, consulta, detalle, tipo, fecha, hora)
       postHist(usuario, consulta, detalle, tipo, fecha, hora)

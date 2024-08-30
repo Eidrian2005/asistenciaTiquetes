@@ -1,8 +1,11 @@
 import { getUsers } from "../../services/getUsers";
+const btnClose = document.getElementById('btnClose')
 
 document.getElementById("login-form").addEventListener("submit", async (e) => {
     e.preventDefault(); //<--- esto previene de recargar la pagina (Eidrian)
 
+    const popver = document.getElementById('popover')
+    
     const usuario = document.getElementById("usuario1").value;
     const email = document.getElementById("Email1").value;
     const contrasenia = document.getElementById("Password1").value;
@@ -30,10 +33,11 @@ document.getElementById("login-form").addEventListener("submit", async (e) => {
         console.error("Error en la validación:", error);
         console.log("Hubo un problema con la validación. Inténtelo de nuevo.");
     }
+    btnClose.addEventListener('click', (event) => {
+        event.preventDefault(); // Evita que el formulario se envíe al cerrar el popover
+        popver.classList.remove('visible'); // Ocultar el popover
+    });
 });
 
-btnClose.addEventListener('click', (event) => {
-    event.preventDefault(); // Evita que el formulario se envíe al cerrar el popover
-    popver.classList.remove('visible'); // Ocultar el popover
-});
+
 //me da risa como los comento porque parece que fuese por chatgpt pero no, esto lo investigue y comente yo(Eidrian) el codigo es de pipe
