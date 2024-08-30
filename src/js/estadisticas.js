@@ -74,7 +74,7 @@ async function mostrarConsultas() {
         `;
         tabla.appendChild(tdConsulta);
 
-        const btnEliminar = tdConsulta.querySelector('.btnBorrar');
+        const btnEliminar = tdConsulta.querySelector('.btnBorrar'); 
 
         btnEliminar.addEventListener('click', async function () {
             try {
