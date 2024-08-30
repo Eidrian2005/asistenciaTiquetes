@@ -1,7 +1,8 @@
 import { getHist } from '../../services/getHist.js';
 import { deleteHist } from '../../services/deleteHist.js';
 
-
+const popver = document.getElementById('popover')
+const btnClose = document.getElementById('btnClose')
 const inputBusca = document.getElementById('buscador')
 const btnPrin = document.getElementById('btnPrin')
 
