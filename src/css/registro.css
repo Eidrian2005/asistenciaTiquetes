@@ -91,7 +91,8 @@ a:hover {
     display: none;
     position: absolute;
     color: #ffffff;
-    width: 550px;
+    width: 450px;
+    height: 170px;
     background-color: #3a3b3c;
     border: 1px solid #3a3b3c;
     border-radius: 5px;
@@ -108,4 +109,8 @@ a:hover {
 
 #btnClose:hover{
     color: #c52626;
+}
+
+.estilosPop.visible {
+    display: block;
 }

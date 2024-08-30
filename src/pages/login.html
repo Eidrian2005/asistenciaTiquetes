@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login / Asistencia </title>
-    <link rel="stylesheet" href="/src/css/login.css">
+    <link rel="stylesheet" href="../css/login.css">
 </head>
 <body>
     <div class="container">
@@ -13,7 +13,7 @@
         <div class="login-panel">
 
             <div class="logo">
-                <img src="#" alt="Logo">
+                <img src="../img/pokemon-pixel-art.gif" alt="Logo">
             </div>
 
             <h2>Iniciar sesión</h2>
@@ -25,6 +25,11 @@
                     <input type="text" class="estilosInput" id="usuario1">
                 </div>
 
+                <div id="popover" class="estilosPop">
+                    <h3>Email y/o usuario incorrectos</h3>
+                    <p id="consejo">Verifique que los datos hayan sido correctos</p>
+                    <button id="btnClose">Cerrar</button>
+                </div>
 
                 <div class="form-grupo">
                     <label for="Email1">Correo electrónico:</label>
@@ -40,12 +45,12 @@
 
             </form>
 
-            <p>¿No tienes cuenta? <a href="#">Crear cuenta</a></p>
+            <p>¿No tienes cuenta? <a href="../pages/registro.html">Crear cuenta</a></p>
 
         </div>
 
     </div>
 
-    <script src="/src/js/login.js" type="module"></script>
+    <script src="../js/login.js" type="module"></script>
 </body>
 </html>

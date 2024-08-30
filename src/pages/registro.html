@@ -8,9 +8,7 @@
 </head>
 <body>
 
-    <header>
-
-    </header>
+    <header></header>
 
     <div class="container">
 
@@ -27,30 +25,32 @@
                 <form class="" id="registroCuenta">
 
                     <div class="form-grupo">
-                        <label for="usuario1" class="form-label">Nombre</label>
+                        <label for="usuario1" class="form-label">Nombre:</label>
                         <input type="text" class="estilosInput" id="usuario1" required>
                     </div>
 
+                    <div id="popover" class="estilosPop">
+                        <h3>Email y/o usuario ya registrado</h3>
+                        <p id="consejo">Verifique que los datos hayan sido correctos</p>
+                        <button id="btnClose">Cerrar</button>
+                    </div>
+
                     <div class="form-grupo">
-                        <label for="Email1" class="form-label">Correo electronico</label>
+                        <label for="Email1" class="form-label">Correo electronico:</label>
                         <input class="estilosInput" type="email" id="Email1" required>
                     </div>
 
                     <div class="form-grupo">
-                        <label for="Password1" class="" >Contraseña</label>
+                        <label for="Password1" class="" >Contraseña:</label>
                         <input  class="estilosInput" type="password" id="Password1" name="password" required>
                     </div>
 
                     <button class="" id="guardar">Crear cuenta</button>
 
-                    <div id="popover" class="estilosPop">
-                        <h3>Email ya registrado</h3>
-                        <p id="consejo">Verifique que los datos hayan sido correctos</p>
-                        <button id="btnClose"></button>
-                    </div>
+                    
 
                     <br>
-                    <p>¿Ya tienes cuenta? <a href="#">Iniciar Sesion</a></p>
+                    <p>¿Ya tienes cuenta? <a href="../pages/login.html">Iniciar Sesion</a></p>
 
                 </form>
 

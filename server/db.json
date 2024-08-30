@@ -1,29 +1,56 @@
 {
   "users": [
     {
-      "id": "67a4",
-      "usuario": "Pipe",
-      "email": "pipe@gmail.com",
-      "contrasenia": "1234"
-    },
-    {
-      "id": "e7fd",
+      "id": "8039",
       "usuario": "Eidrian",
       "email": "eidrian@gmail.com",
+      "contrasenia": "12345"
+    },
+    {
+      "id": "e0ee",
+      "usuario": "Pipe",
+      "email": "pipe@gmail.com",
       "contrasenia": "1234"
     }
   ],
   "historial": [
     {
-
+      "id": "0b76",
+      "usuario": "Hola",
+      "consulta": "si",
+      "detalle": "Gracias",
+      "tipo": "personal",
+      "fecha": "2024-08-28",
+      "hora": "08:59"
+    },
+    {
+      "id": "96da",
+      "usuario": "Eidrian",
+      "consulta": "Ayuda a programar una inteligencia artificial basica",
+      "detalle": "necesito el asesoramiento ",
+      "tipo": "academica",
+      "fecha": "2024-08-30",
+      "hora": "09:00"
     }
   ],
-
-  "Consultas": [{
+  "Consultas": [
+    {
+      "id": "dae3",
+      "usuario": "Hola",
+      "consulta": "si",
+      "detalle": "Gracias",
+      "tipo": "personal",
+      "fecha": "2024-08-28",
+      "hora": "08:59"
+    },
+    {
+      "id": "74bd",
       "usuario": "Eidrian",
-      "Consulta": "Quiero crear una bomba",
-      "Detalle de consulta": "necesito saber los pasos y ingredientes",
-      "fecha": "8/23/2024",
-      "hora": "3:00pm"
-  }]
+      "consulta": "Ayuda a programar una inteligencia artificial basica",
+      "detalle": "necesito el asesoramiento ",
+      "tipo": "academica",
+      "fecha": "2024-08-30",
+      "hora": "09:00"
+    }
+  ]
 }
