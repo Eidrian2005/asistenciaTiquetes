@@ -46,14 +46,11 @@ btnMostrar.addEventListener('click',function () {
 
 async function agregarConsulta() {
 
-  const usuario = await getUsers()
-
-
-  const nombreUsuario = usuario[0].usuario; //funciona cuando solo hay un usuario en la lista
-console.log(nombreUsuario);
+  const usuario2 = await getUsers()
 
 
   /*zona de inputs*/
+  const usuario = document.getElementById('nombrestudiante').value;
   const consulta = document.getElementById("consulta").value;
   const detalle = document.getElementById("consultatexto").value;
   const tipo = document.getElementById("tipo-consulta").value;
@@ -66,20 +63,14 @@ console.log(nombreUsuario);
     return;
   }
 
-  usuario.forEach(element => {
-    
-    
-    let usuarioLog = usuario.find(i => i.usuario === element.usuario)
 
-    if (usuarioLog) {
       
-      postCons(element.usuario, consulta, detalle, tipo, fecha, hora)
-      postHist(element.usuario, consulta, detalle, tipo, fecha, hora)
-    }
-  });
+      postCons(usuario, consulta, detalle, tipo, fecha, hora)
+      postHist(usuario, consulta, detalle, tipo, fecha, hora)
+  
   
   const consulta1 = {
-    nombre: usuario.usuario,
+    nombre: usuario,
     consulta: consulta,
     detalle: detalle,
     tipo: tipo,
@@ -88,13 +79,12 @@ console.log(nombreUsuario);
   };
 
   consultas.push(consulta1);
-
+  document.getElementById('nombrestudiante').value = '';
   document.getElementById("consulta").value = '';
   document.getElementById("consultatexto").value = '';
   document.getElementById("tipo-consulta").value = '';
   document.getElementById("fecha").value = '';
   document.getElementById("hora").value = '';
-
 
 }
 
@@ -147,20 +137,6 @@ async function mostrarConsultas() {
   });
 
   contenedor.style.display = "block";
-
-   const btnEli = divConsulta.querySelector('.btnEli');
-
-    btnEli.addEventListener('click', async function () {
-      try {
-          // Asegúrate de pasar el ID de la consulta al llamar a deleteHist
-          await deleteCons(consulta.id); 
-          divConsulta.remove(); // Elimina el elemento del DOM si la eliminación es exitosa
-      } catch (error) {
-          console.error('Error al eliminar la consulta:', error);
-          alert('No se pudo eliminar la consulta. Por favor, intente de nuevo.');
-      }
-  })
-
   
   btnOcultar.addEventListener('click', function () {
     btnMostrar.style.display = 'block';

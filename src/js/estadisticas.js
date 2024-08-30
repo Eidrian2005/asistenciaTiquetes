@@ -18,10 +18,9 @@ async function mostrarConsultas() {
     const consultas = await getHist(); 
 
     const tabla = document.getElementById("tabla");
-    
 
     if (consultas.length === 0) {
-        alert("No hay consultas para mostrar.");
+        popver.classList.add('visible');
         return;
     }
 
@@ -29,7 +28,7 @@ async function mostrarConsultas() {
         const tdConsulta = document.createElement('tr');
         tdConsulta.className = 'consulta';
 
-        // Verificación de la hora antes de construir la cadena fechaHora
+        // Verificación de la hora antes de construir fechaHora
         const fecha = consulta.hora ? `${consulta.fecha}` : consulta.fecha;
         const Hora = consulta.hora ? ` ${consulta.hora}` : consulta.hora;
 
@@ -48,17 +47,20 @@ async function mostrarConsultas() {
 
         btnEliminar.addEventListener('click', async function () {
             try {
-                // Asegúrate de pasar el ID de la consulta al llamar a deleteHist
+                // pasa el ID de la consulta al llamar a deleteHist
                 await deleteHist(consulta.id); 
-                tdConsulta.remove(); // Elimina el elemento del DOM si la eliminación es exitosa
+                tdConsulta.remove(); // Elimina el elemento del DOM 
             } catch (error) {
                 console.error('Error al eliminar la consulta:', error);
-                alert('No se pudo eliminar la consulta. Por favor, intente de nuevo.');
+                console.log('No se pudo eliminar la consulta. Por favor, intente de nuevo.');
             }
         });
     });
 }
-
+btnClose.addEventListener('click', (event) => {
+    event.preventDefault(); // Evita que el formulario se envíe
+    popver.classList.remove('visible'); // Ocultar el popover
+});
 
 mostrarConsultas();
 

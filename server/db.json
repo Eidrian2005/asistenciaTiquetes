@@ -14,5 +14,15 @@
     }
   ],
   "historial": [],
-  "Consultas": []
+  "Consultas": [
+    {
+      "id": "b4b9",
+      "usuario": "Eidrian",
+      "consulta": "si",
+      "detalle": "adios",
+      "tipo": "administrativa",
+      "fecha": "2024-08-29",
+      "hora": "20:55"
+    }
+  ]
 }
