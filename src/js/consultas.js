@@ -64,7 +64,7 @@ async function agregarConsulta() {
     return;
   }
 
-2
+
       // se engargan de postear el contenido de los inputs a el "servidor"
       postCons(usuario, consulta, detalle, tipo, fecha, hora)
       postHist(usuario, consulta, detalle, tipo, fecha, hora)
