@@ -9,96 +9,50 @@
   ],
   "historial": [
     {
-      "id": "a61f",
-      "usuario": "Eidrian",
-      "consulta": "hola",
-      "detalle": "a",
-      "tipo": "administrativa",
-      "fecha": "2024-08-29",
-      "hora": "14:09"
-    },
+      "id": "e0ee",
+      "usuario": "Pipe",
+      "email": "pipe@gmail.com",
+      "contrasenia": "1234"
+    }
+  ],
+  "historial": [
     {
-      "id": "dc81",
-      "usuario": "Eidrian",
-      "consulta": "aadfefdf",
-      "detalle": "fvfvfrtbtrb",
+      "id": "0b76",
+      "usuario": "Hola",
+      "consulta": "si",
+      "detalle": "Gracias",
       "tipo": "personal",
-      "fecha": "2024-08-29",
-      "hora": "14:22"
+      "fecha": "2024-08-28",
+      "hora": "08:59"
     },
     {
-      "id": "226d",
+      "id": "96da",
       "usuario": "Eidrian",
-      "consulta": "try67i67uytg",
-      "detalle": "ertet",
-      "tipo": "administrativa",
-      "fecha": "2024-08-29",
-      "hora": "14:22"
-    },
-    {
-      "id": "ddb6",
-      "usuario": "Eidrian",
-      "consulta": "Como cocinar pescado",
-      "detalle": "no se como",
-      "tipo": "personal",
-      "fecha": "2024-08-29",
-      "hora": "14:22"
+      "consulta": "Ayuda a programar una inteligencia artificial basica",
+      "detalle": "necesito el asesoramiento ",
+      "tipo": "academica",
+      "fecha": "2024-08-30",
+      "hora": "09:00"
     }
   ],
   "Consultas": [
     {
-      "id": "7806",
-      "usuario": "Eidrian",
-      "consulta": "hola",
-      "detalle": "a",
-      "tipo": "administrativa",
-      "fecha": "2024-08-29",
-      "hora": "14:09"
-    },
-    {
-      "id": "178a",
-      "usuario": "Eidrian",
-      "consulta": "ewdewr",
-      "detalle": "rwrwe",
+      "id": "dae3",
+      "usuario": "Hola",
+      "consulta": "si",
+      "detalle": "Gracias",
       "tipo": "personal",
-      "fecha": "2024-08-29",
-      "hora": "14:20"
+      "fecha": "2024-08-28",
+      "hora": "08:59"
     },
     {
-      "id": "0d77",
+      "id": "74bd",
       "usuario": "Eidrian",
-      "consulta": "aaaa",
-      "detalle": "aa",
+      "consulta": "Ayuda a programar una inteligencia artificial basica",
+      "detalle": "necesito el asesoramiento ",
       "tipo": "academica",
-      "fecha": "2024-08-29",
-      "hora": "14:21"
-    },
-    {
-      "id": "1892",
-      "usuario": "Eidrian",
-      "consulta": "aadfefdf",
-      "detalle": "fvfvfrtbtrb",
-      "tipo": "personal",
-      "fecha": "2024-08-29",
-      "hora": "14:22"
-    },
-    {
-      "id": "bc6a",
-      "usuario": "Eidrian",
-      "consulta": "try67i67uytg",
-      "detalle": "ertet",
-      "tipo": "administrativa",
-      "fecha": "2024-08-29",
-      "hora": "14:22"
-    },
-    {
-      "id": "6a7a",
-      "usuario": "Eidrian",
-      "consulta": "Como cocinar pescado",
-      "detalle": "no se como",
-      "tipo": "personal",
-      "fecha": "2024-08-29",
-      "hora": "14:22"
+      "fecha": "2024-08-30",
+      "hora": "09:00"
     }
   ]
 }
